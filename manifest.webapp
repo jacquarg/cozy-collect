@@ -72,6 +72,11 @@
       "folder": "/services",
       "index": "index.html",
       "public": false
+    },
+    "/managekonnectors": {
+      "folder": "/managekonnectors",
+      "index": "index.html",
+      "public": false
     }
   },
   "intents": [{
