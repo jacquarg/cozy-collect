@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- {{.CozyClientJS}} sera remplacé par la balise HTML injectant le script de la bibliothèque cozy-client-js. -->
+  {{.CozyClientJS}}
+  {{.CozyBar}}
+  <title>Manage konnectors</title>
+</head>
+<body>
+  <div role="application" data-cozy-token="{{.Token}}" data-cozy-domain="{{.Domain}}" class="container-fluid" data-cozy-app-name="{{.AppName}}" >
+    <H1>Install, update manually your konnectors !</H1>
+    <H2>Update</H2>
+    <P>Fill up the slug (contraints ?) field, and press update !</P>
+
+    <H2>Install</H2>
+    <P>Fill up the slug field, and the repository url field, and press install ! Be carrefull, to use this konnector with cozy-collect, it as to be added to the <a href="https://github.com/cozy/cozy-collect/blob/master/src/config/konnectors.json">konnectors.json</a> file of the branch you will use.</p>
+
+    <form>
+      <fieldset>
+        <label>Slug : <input type="text" id="slug"></label>
+        <input type="button" id="update" value="Update" >
+      </fieldset>
+      <fieldset>
+        <label>URI : <input type="uri" id="repositoryuri"></label>
+        <input type="button" id="install" value="Install" >
+      </fieldset>
+
+    </form>
+    <div>Message : <b><span id="message" ></span></b></div>
+  </div>
+  <script src='/app.js' ></script>
+</body>
+</html>
