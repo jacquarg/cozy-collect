@@ -1,6 +1,6 @@
 {
   "name": "cozy-collect",
-  "version": "1.0.2",
+  "version": "1.0.2-GJEnedis",
   "main": "src/index.jsx",
   "scripts": {
     "build:managekonnectors": "cp -r managekonnectors build/",
