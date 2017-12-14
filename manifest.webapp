@@ -1,6 +1,6 @@
 {
   "name": "Collect",
-  "slug": "app",
+  "slug": "collect",
   "icon": "cozy_collect.svg",
   "category": "cozy",
   "source": "https://github.com/cozy/cozy-collect.git@build",
@@ -9,7 +9,7 @@
     "name": "Cozy",
     "url": "https://cozy.io"
   },
-  "version": "1.0.2-GJEnedis",
+  "version": "1.0.2",
   "licence": "AGPL-3.0",
   "screenshots": [
     "screenshots/screenshot1.png",
@@ -99,11 +99,6 @@
       "folder": "/services",
       "index": "index.html",
       "public": false
-    },
-    "/managekonnectors": {
-      "folder": "/managekonnectors",
-      "index": "index.html",
-      "public": false
     }
   },
   "intents": [
@@ -114,5 +109,16 @@
       ],
       "href": "/services"
     }
+  ],
+  "locales": {
+    "en": {
+      "name": "Collect",
+      "short_description": "Configuration application for konnectors. Grab your services data to your Cozy.",
+      "long_description": "__Collect__ will allow you to grab all your informations that you have using tons on services on providers websites or applications.\nEnjoy this new way to get control on your daily data :tada:",
+      "changes": "### New features :rocket:\n\nConnectors for you bank accounts!!:bank:"
+    }
+  },
+  "langs": [
+    "en"
   ]
 }
