@@ -9,7 +9,7 @@
     "name": "Cozy",
     "url": "https://cozy.io"
   },
-  "version": "1.0.2-GJEnedis",
+  "version": "1.0.2",
   "licence": "AGPL-3.0",
   "screenshots": [
     "screenshots/screenshot1.png",
@@ -63,7 +63,12 @@
     },
     "files": {
       "description": "Required to access folders",
-      "type": "io.cozy.files"
+      "type": "io.cozy.files",
+      "verbs": [
+        "GET",
+        "PATCH",
+        "POST"
+      ]
     },
     "jobs": {
       "description": "Required to run the konnectors",
@@ -97,11 +102,6 @@
     },
     "/services": {
       "folder": "/services",
-      "index": "index.html",
-      "public": false
-    },
-    "/managekonnectors": {
-      "folder": "/managekonnectors",
       "index": "index.html",
       "public": false
     }
