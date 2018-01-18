@@ -9,7 +9,7 @@
     "name": "Cozy",
     "url": "https://cozy.io"
   },
-  "version": "1.0.2",
+  "version": "1.0.2-managekonnectors",
   "licence": "AGPL-3.0",
   "screenshots": [
     "screenshots/screenshot1.png",
